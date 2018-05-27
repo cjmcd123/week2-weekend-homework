@@ -24,9 +24,10 @@ class RoomTest < MiniTest::Test
     assert_equal(5, @room.cost())
   end
 
-  def test_room_has_till
-    assert_equal(0, @room.till())
-  end
+  # def test_room_has_till
+  #   assert_equal(0, @room.till())
+  # end
+  # non functional test left from previous version before implementation of the bar class
 
   def test_room_songs_empty
     assert_equal([], @room.songs)
