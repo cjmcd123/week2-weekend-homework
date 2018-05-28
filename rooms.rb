@@ -29,6 +29,9 @@ class Room
     if result == false
       return "Room at capacity"
     else
+      # new_money += room_cost
+      # @guests << Guest.new(name, new_money, fav_song)
+      # left over code from when the room was tested indipendently from bar
       @guests << Guest.new(name, money, fav_song)
       guest = find_guest(name)
       guest.guest_pays(room_cost)
